@@ -148,7 +148,7 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-30d",
+      "from": "now-6h",
       "hideTimepicker": false,
       "timezone": "browser",
       "to": "now"
@@ -194,8 +194,8 @@
         "spec": {
           "allowCustomValue": true,
           "current": {
-            "text": "/var/log/kernel.log",
-            "value": "/var/log/kernel.log"
+            "text": "/var/log/apid.log",
+            "value": "/var/log/apid.log"
           },
           "definition": "",
           "hide": "dontHide",
