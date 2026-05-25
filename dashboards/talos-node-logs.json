@@ -127,7 +127,7 @@
         "title": "Source (GitHub)",
         "tooltip": "View source file in repository",
         "type": "link",
-        "url": "https://github.com/UnknownBlunders/grafana-dashboards/blob/main/dashboards/victorialogs-simple.json"
+        "url": "https://github.com/UnknownBlunders/grafana-dashboards/blob/main/dashboards/talos-node-logs.json"
       }
     ],
     "liveNow": false,
@@ -167,7 +167,7 @@
           "hide": "dontHide",
           "includeAll": false,
           "multi": false,
-          "name": "namespace",
+          "name": "node",
           "options": [],
           "query": {
             "datasource": {
@@ -201,7 +201,7 @@
           "hide": "dontHide",
           "includeAll": false,
           "multi": false,
-          "name": "workload",
+          "name": "file",
           "options": [],
           "query": {
             "datasource": {
