@@ -2699,7 +2699,7 @@
           "hide": "dontHide",
           "includeAll": false,
           "multi": false,
-          "name": "Datasource",
+          "name": "datasource",
           "options": [],
           "pluginId": "prometheus",
           "refresh": "onDashboardLoad",
