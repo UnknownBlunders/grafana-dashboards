@@ -160,10 +160,10 @@
         "spec": {
           "allowCustomValue": true,
           "current": {
-            "text": "abs",
-            "value": "abs"
+            "text": "kcp01",
+            "value": "kcp01"
           },
-          "definition": "label_values(kube_namespace_created,namespace)",
+          "definition": "label_values(kube_node_info,node)",
           "hide": "dontHide",
           "includeAll": false,
           "multi": false,
@@ -177,7 +177,7 @@
             "kind": "DataQuery",
             "spec": {
               "qryType": 1,
-              "query": "label_values(kube_namespace_created,namespace)",
+              "query": "label_values(kube_node_info,node)",
               "refId": "PrometheusVariableQueryEditor-VariableQuery"
             },
             "version": "v0"
@@ -194,10 +194,10 @@
         "spec": {
           "allowCustomValue": true,
           "current": {
-            "text": "abs-deployment",
-            "value": "abs-deployment"
+            "text": "/var/log/auditd.log",
+            "value": "/var/log/auditd.log"
           },
-          "definition": "label_values(namespace_workload_pod:kube_pod_owner:relabel{namespace=\"$namespace\"},workload)",
+          "definition": "",
           "hide": "dontHide",
           "includeAll": false,
           "multi": false,
@@ -205,14 +205,16 @@
           "options": [],
           "query": {
             "datasource": {
-              "name": "${DS_METRICS}"
+              "name": "${DS_LOGS}"
             },
-            "group": "prometheus",
+            "group": "victoriametrics-logs-datasource",
             "kind": "DataQuery",
             "spec": {
-              "qryType": 1,
-              "query": "label_values(namespace_workload_pod:kube_pod_owner:relabel{namespace=\"$namespace\"},workload)",
-              "refId": "PrometheusVariableQueryEditor-VariableQuery"
+              "field": "filename",
+              "limit": 25,
+              "query": "",
+              "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
+              "type": "fieldValue"
             },
             "version": "v0"
           },
