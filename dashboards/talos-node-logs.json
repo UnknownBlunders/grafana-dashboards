@@ -148,7 +148,7 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-6h",
+      "from": "now-30d",
       "hideTimepicker": false,
       "timezone": "browser",
       "to": "now"
@@ -194,8 +194,8 @@
         "spec": {
           "allowCustomValue": true,
           "current": {
-            "text": "/var/log/auditd.log",
-            "value": "/var/log/auditd.log"
+            "text": "/var/log/kernel.log",
+            "value": "/var/log/kernel.log"
           },
           "definition": "",
           "hide": "dontHide",
@@ -218,7 +218,7 @@
             },
             "version": "v0"
           },
-          "refresh": "onDashboardLoad",
+          "refresh": "onTimeRangeChanged",
           "regex": "",
           "regexApplyTo": "value",
           "skipUrlSync": false,
