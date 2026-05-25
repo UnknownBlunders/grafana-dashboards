@@ -27,7 +27,7 @@
       }
     ],
     "cursorSync": "Off",
-    "description": "Simple dashboard to watch VictoriaLogs\r\n",
+    "description": "Simple dashboard to watch VictoriaLogs\n",
     "editable": true,
     "elements": {
       "panel-1": {
@@ -152,7 +152,7 @@
       "timezone": "browser",
       "to": "now"
     },
-    "title": "Simple VictoriaLogs",
+    "title": "Kube Workload Logs",
     "variables": [
       {
         "kind": "QueryVariable",
