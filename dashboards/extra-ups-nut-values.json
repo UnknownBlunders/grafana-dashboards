@@ -49,7 +49,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "(network_ups_tools_ups_load{instance=~\"$instance\",job=~\"$job\",ups=\"$ups\"}/100) * 900",
+                        "expr": "(network_ups_tools_ups_load{job=~\"$job\",ups=\"$ups\"}/100) * 900",
                         "legendFormat": "__auto",
                         "range": true
                       },
@@ -167,7 +167,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "avg_over_time(\n  ((network_ups_tools_ups_load{instance=~\"$instance\",job=~\"$job\",ups=\"$ups\"}/100) * 900)[${energy_interval}h:]\n) * ${energy_interval} / 1000",
+                        "expr": "avg_over_time(\n  ((network_ups_tools_ups_load{job=~\"$job\",ups=\"$ups\"}/100) * 900)[${energy_interval}h:]\n) * ${energy_interval} / 1000",
                         "interval": "${energy_interval}h",
                         "legendFormat": "__auto",
                         "range": true
@@ -334,7 +334,7 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-2d",
+      "from": "now-24h",
       "hideTimepicker": false,
       "timezone": "browser",
       "to": "now"
@@ -358,40 +358,6 @@
           "refresh": "onDashboardLoad",
           "regex": "",
           "skipUrlSync": false
-        }
-      },
-      {
-        "kind": "QueryVariable",
-        "spec": {
-          "allowCustomValue": true,
-          "current": {
-            "text": "10.244.3.58:9199",
-            "value": "10.244.3.58:9199"
-          },
-          "definition": "label_values(network_ups_tools_device_info,instance)",
-          "hide": "dontHide",
-          "includeAll": false,
-          "multi": false,
-          "name": "instance",
-          "options": [],
-          "query": {
-            "datasource": {
-              "name": "${datasource}"
-            },
-            "group": "prometheus",
-            "kind": "DataQuery",
-            "spec": {
-              "qryType": 1,
-              "query": "label_values(network_ups_tools_device_info,instance)",
-              "refId": "PrometheusVariableQueryEditor-VariableQuery"
-            },
-            "version": "v0"
-          },
-          "refresh": "onTimeRangeChanged",
-          "regex": "",
-          "regexApplyTo": "value",
-          "skipUrlSync": false,
-          "sort": "disabled"
         }
       },
       {
