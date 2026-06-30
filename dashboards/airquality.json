@@ -26,7 +26,7 @@
         }
       }
     ],
-    "cursorSync": "Off",
+    "cursorSync": "Crosshair",
     "description": "",
     "editable": true,
     "elements": {
@@ -119,7 +119,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -237,7 +237,7 @@
                 }
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -337,7 +337,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -411,6 +411,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -424,7 +425,8 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "color": "green"
+                        "color": "green",
+                        "value": 0
                       }
                     ]
                   }
@@ -432,6 +434,10 @@
                 "overrides": []
               },
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [],
                   "displayMode": "list",
@@ -445,7 +451,7 @@
                 }
               }
             },
-            "version": "12.0.2"
+            "version": "13.0.3"
           }
         }
       },
@@ -545,7 +551,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -619,6 +625,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -632,7 +639,8 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "color": "green"
+                        "color": "green",
+                        "value": 0
                       }
                     ]
                   }
@@ -640,6 +648,10 @@
                 "overrides": []
               },
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [],
                   "displayMode": "list",
@@ -653,7 +665,7 @@
                 }
               }
             },
-            "version": "12.0.2"
+            "version": "13.0.3"
           }
         }
       },
@@ -745,7 +757,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -845,7 +857,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -945,7 +957,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -1224,6 +1236,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1237,7 +1250,8 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "color": "green"
+                        "color": "green",
+                        "value": 0
                       },
                       {
                         "color": "red",
@@ -1249,6 +1263,10 @@
                 "overrides": []
               },
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [],
                   "displayMode": "list",
@@ -1262,7 +1280,7 @@
                 }
               }
             },
-            "version": "12.0.2"
+            "version": "13.0.3"
           }
         }
       },
@@ -1336,6 +1354,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1349,7 +1368,8 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "color": "green"
+                        "color": "green",
+                        "value": 0
                       }
                     ]
                   }
@@ -1357,6 +1377,10 @@
                 "overrides": []
               },
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [],
                   "displayMode": "list",
@@ -1370,7 +1394,7 @@
                 }
               }
             },
-            "version": "12.0.2"
+            "version": "13.0.3"
           }
         }
       },
@@ -1448,6 +1472,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1461,7 +1486,8 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "color": "green"
+                        "color": "green",
+                        "value": 0
                       }
                     ]
                   }
@@ -1469,6 +1495,10 @@
                 "overrides": []
               },
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [],
                   "displayMode": "list",
@@ -1482,7 +1512,7 @@
                 }
               }
             },
-            "version": "12.0.2"
+            "version": "13.0.3"
           }
         }
       },
@@ -1743,7 +1773,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -1865,7 +1895,7 @@
                 }
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -1987,7 +2017,7 @@
                 }
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -2080,7 +2110,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -2198,7 +2228,7 @@
                 }
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       },
@@ -2290,7 +2320,7 @@
                 "wideLayout": true
               }
             },
-            "version": "13.0.1"
+            "version": "13.0.3"
           }
         }
       }
@@ -2649,7 +2679,7 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-6h",
+      "from": "now-2d",
       "hideTimepicker": false,
       "timezone": "browser",
       "to": "now"
